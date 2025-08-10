@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Minimal Glassmorphism Website</title>
+  <style>
+    /*
+      This single‑page website uses a minimal black and white palette and
+      glassmorphism to create a modern, elegant look. All elements are
+      rounded and spaced generously to emphasise simplicity. To view and
+      edit this file in Visual Studio Code, save it to your project
+      directory and open it in the editor.
+    */
+
+    /* Import a clean, modern font for headings and body text */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    /* Colour palette variables */
+    :root {
+      --background-color: #0a0a0a;        /* nearly black background */
+      --glass-color: rgba(255, 255, 255, 0.07); /* translucent card background */
+      --glass-border-color: rgba(255, 255, 255, 0.25); /* subtle border */
+      --text-color: #ffffff;             /* white text */
+    }
+
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background-color);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    /* Glassmorphism container */
+    .glass-container {
+      background: var(--glass-color);
+      border-radius: 20px;
+      border: 1px solid var(--glass-border-color);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      padding: 2rem 3rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+      max-width: 600px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 600;
+      color: var(--text-color);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--text-color);
+      line-height: 1.6;
+      margin-top: 0.5rem;
+    }
+
+    /* Action button */
+    .btn {
+      display: inline-block;
+      margin-top: 1.75rem;
+      padding: 0.7rem 1.8rem;
+      border-radius: 30px;
+      border: 1px solid var(--text-color);
+      color: var(--text-color);
+      background: transparent;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--text-color);
+      color: var(--background-color);
+    }
+  </style>
+</head>
+<body>
+  <main class="glass-container">
+    <h1>Welcome to My Minimal Site</h1>
+    <p>
+      This simple one‑page site demonstrates how a black and white
+      colour palette and glassmorphic elements can create a striking,
+      contemporary design. Feel free to customise the text, colours and
+      layout to suit your own project—everything you see here can be
+      edited directly in Visual Studio Code.
+    </p>
+    <a href="#" class="btn">Get Started</a>
+  </main>
+</body>
+</html>
